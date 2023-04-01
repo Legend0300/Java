@@ -59,4 +59,8 @@ public class Account {
             return balance;
         }
     }
+
+
+    Food[] foods = new Food[10];
+    
 }

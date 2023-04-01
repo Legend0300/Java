@@ -60,5 +60,19 @@ public class App {
         atm.withdraw(1000);
 
 
+        Food[] foods = new Food[10];
+
+        for(int i = 0; i < foods.length; i++) {
+            foods[i] = new Food("Food" + i);
+        }
+
+        System.out.println(Food.counter);
+
+        for(Food food : foods) {
+            System.out.println(food);
+        }
+        Food.counter = 0;
+
+        System.out.println(Food.counter);
     }
 }
