@@ -13,8 +13,8 @@ public class App {
       System.out.println("2. Volunteer login");
       System.out.println("3. Staff login");
       System.out.println("4. Director: generate monthly statistical report");
-      System.out.println("5. Skills to offer");
-      System.out.println("6. Skills needed");
+      System.out.println("5. Add Skills to offer");
+      System.out.println("6. Remove Skills to Offer");
       System.out.println("7. Match up volunteers");
       System.out.println("8. Local community");
       System.out.println("9. Chat box");
@@ -47,8 +47,8 @@ public class App {
           System.out.print("Please enter your password: ");
           String staffPassword = input.next();
           
-          cubank.StaffLogin(staffEmail, staffPassword);
-
+        String Loggedin = cubank.StaffLogin(staffEmail, staffPassword);
+        System.out.println(Loggedin);
           break;
         case 4:
           // Director: generate monthly statistical report
@@ -68,18 +68,18 @@ public class App {
 
           break;
         case 6:
-          // Skills needed
-          System.out.print("Please enter the name of the skill you need: ");
-          String skillneededName = input.next();
-            System.out.print("Please enter any notes about the skill: ");
-            String skillNoteNeeded = input.next();
-            System.out.print("Please enter the date and time the skill is needed: ");
-            String skillDateTimeNeeded = input.next();
+          // // Skills needed
+          // System.out.print("Please enter the name of the skill you need: ");
+          // String skillneededName = input.next();
+          //   System.out.print("Please enter any notes about the skill: ");
+          //   String skillNoteNeeded = input.next();
+          //   System.out.print("Please enter the date and time the skill is needed: ");
+          //   String skillDateTimeNeeded = input.next();
+
+          Skills skills = new Skills("" , "" , new DateAndTime(2 , 4, 5));
 // create a new skill object and add it to the volunteer's skills needed list
-
-
-
-break;
+    break;
+    
 case 7:
 // Match up volunteers
 System.out.println("Matching up volunteers...");
