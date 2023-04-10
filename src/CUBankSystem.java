@@ -4,6 +4,7 @@ public class CUBankSystem {
     Volunteer[] volunteers = new Volunteer[10];
     Staff[] staff = new Staff[10];
     {
+        staff[0] = new Staff("hello", "hello");
         volunteers[0] = new Volunteer(new PersonalDetails("John", "hello@hello" , "pass" , "123456789"), new Skills("Java", "Java is a programming language", new DateAndTime(1, 1, 2020)), new Skills("JavaScript", "JavaScript is a programming language", new DateAndTime(1, 1, 2020)), new DateAndTime(1, 1, 2020) , new MatchedUp("", "" , ""));
         volunteers[1] = new Volunteer(new PersonalDetails("John1", "hello@hello1" , "pass11" , "1234567819"), new Skills("JavaScript", "Java is a programming language", new DateAndTime(1, 1, 2020)), new Skills("Java", "JavaScript is a programming language", new DateAndTime(1, 1, 2020)), new DateAndTime(1, 1, 2020) , new MatchedUp("", "" , ""));
         Staff.Matchup(volunteers);
@@ -31,7 +32,7 @@ public class CUBankSystem {
                 {
                     System.out.println("Staff Logged In");
                     System.out.println("staff logged in" + staff[i]);
-                    return "Staff Logged In";
+                    return "Staff Logged In a as" + email;
                 }
             }
         }
